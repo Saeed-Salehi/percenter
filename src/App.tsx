@@ -8,14 +8,13 @@ import { AddButton } from "./components/AddButton";
 import { EmptyState } from "./components/EmptyState";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
-import type DateObject from "react-date-object";
 import DatePickerModule from "react-multi-date-picker";
 
 // @ts-expect-error   ,,,
 const DatePicker = DatePickerModule.default || DatePickerModule;
 
 const App: React.FC = () => {
-  const [date, setDate] = useState<DateObject>(null);
+  const [date, setDate] = useState(null);
   const {
     colLabels,
     setColLabels,

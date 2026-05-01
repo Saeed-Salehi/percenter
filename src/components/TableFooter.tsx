@@ -18,6 +18,7 @@ export const TableFooter: React.FC<TableFooterProps> = ({
     "-": "تفریق",
     "*": "ضرب",
     "/": "تقسیم",
+    "%": "نسبت"
   };
 
   return (
